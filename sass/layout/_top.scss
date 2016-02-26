@@ -1,0 +1,52 @@
+.page__top {
+  height: 600px;
+
+  background: url(../../img/photo-background@1x.jpg) no-repeat center center;
+  background-size: cover;
+
+  padding: 1px;
+
+  @include col-xs-24;
+}
+
+.top__text-welcome {
+  margin-top: 63px;
+
+  height: 45px;
+
+  background: url(../../img/text-welcome.svg) no-repeat center center;
+
+  @include col-xs-24;
+}
+
+.top__text-tothegorgeous {
+  margin-top: 23px;
+
+  height: 29px;
+
+  background: url(../../img/text-tothegorgeous.svg) no-repeat center center;
+
+  @include col-xs-24;
+}
+
+.top__text-sedona {
+  margin-top: 90px;
+
+  height: 80px;
+
+  background: url(../../img/text-sedona.svg) no-repeat center center;
+  background-size: contain;
+
+  @include col-xs-20;
+  @include col-xs-offset-2;
+}
+
+.top__text-because {
+  margin-top: 63px;
+
+  height: 79px;
+
+  background: url(../../img/text-becausecanyon.svg) no-repeat center center;
+
+  @include col-xs-24;
+}

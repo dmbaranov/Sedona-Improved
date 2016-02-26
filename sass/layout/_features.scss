@@ -1,0 +1,172 @@
+.feature-blue {
+  padding: 1px;
+
+  background: $blue;
+}
+
+.feature-blue--first {
+  margin-top: -145px;
+}
+
+.feature-blue__header {
+  margin-top: 60px;
+
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+  color: white;
+}
+
+.feature-blue__number {
+  margin-top: 20px;
+
+  text-align: center;
+  font-size: 21px;
+  color: white;
+}
+
+.feature-blue__text {
+  margin-top: 25px;
+  margin-bottom: 45px;
+
+  width: 330px;
+
+  text-align: center;
+  font-size: 21px;
+  color: white;
+}
+
+.feature-photo__photo {
+  width: 100%;
+  height: auto;
+}
+
+.feature-description {
+  position: relative;
+  margin-top: 45px;
+
+  @include col-xs-20;
+  @include col-xs-offset-4;
+}
+
+.feature-description--hotel::after {
+  position: absolute;
+  top: -10px;
+  left: -50px;
+
+  width: 38px;
+  height: 36px;
+
+  background: url(../../img/icon-house.svg) no-repeat center center;
+  background-size: contain;
+
+  content: "";
+}
+
+.feature-description--souvenir::after {
+  position: absolute;
+  top: -10px;
+  left: -50px;
+
+  width: 38px;
+  height: 36px;
+
+  background: url(../../img/icon-gift.svg) no-repeat center center;
+  background-size: contain;
+
+  content: "";
+}
+
+.feature-description--food::after {
+  position: absolute;
+  top: -10px;
+  left: -50px;
+
+  width: 38px;
+  height: 36px;
+
+  background: url(../../img/icon-burger.svg) no-repeat center center;
+  background-size: contain;
+
+  content: "";
+}
+
+.feature-description__header {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.feature-description__text {
+  margin-top: 27px;
+  margin-bottom: 35px;
+
+  width: 250px;
+
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+//CHECK THAT GRAY BLOCK FOR DRY!
+
+.feature-gray {
+  background: $gray;
+}
+
+.feature-gray__header {
+  margin-top: -3px;
+
+  padding-top: 33px;
+
+
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+  color: black;
+}
+
+.feature-gray__number {
+  margin-top: 20px;
+
+  text-align: center;
+  font-size: 21px;
+  color: black;
+}
+
+.feature-gray__text {
+  margin-top: 25px;
+  margin-bottom: 45px;
+
+  width: 330px;
+
+  text-align: center;
+  font-size: 21px;
+  color: black;
+}
+
+/*.feature-gray__separator {
+  position: relative;
+
+  border: 2px solid #d6d6d6;
+
+  z-index: 2;
+
+  @include col-xs-20;
+  @include col-xs-offset-2;
+}*/
+
+.feature-gray__separator {
+  position: relative;
+}
+
+.feature-gray__separator::after {
+  position: absolute;
+  left: 10%;
+
+  width: 80%;
+  height: 2px;
+
+  background: #d6d6d6;
+
+  content: "";
+}

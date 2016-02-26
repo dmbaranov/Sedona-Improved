@@ -1,0 +1,25 @@
+.navigation {
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+
+.navigation__logo {
+  position: absolute;
+  left: calc(50% - 68px);
+
+  width: 137px;
+  height: 71px;
+
+  background: url(../../img/logo-sedona@1x.png) no-repeat top center, url(../../img/form-logo-triangle.svg) no-repeat top center;
+
+}
+
+.navigation__burger {
+  height: 23px;
+
+  background: url(../../img/icon-menu.svg) no-repeat center center;
+
+  @include col-xs-2;
+  @include col-xs-offset-20;
+}

@@ -1,0 +1,63 @@
+.linethrough-white {
+    margin-bottom: 2rem;
+
+    overflow: hidden;
+}
+
+.linethrough-white:before,
+.linethrough-white:after {
+    position: relative;
+    vertical-align: middle;
+
+    display: inline-block;
+    width: 0.875rem;
+    height: 0.0625rem;
+
+    background: #ffffff;
+
+    content: "";
+}
+
+.linethrough-white:before {
+    right: 0.5em;
+
+    margin-left: -50%;
+}
+
+.linethrough-white:after {
+    left: 0.5em;
+
+    margin-right: -50%;
+}
+
+.linethrough-black {
+    margin-bottom: 2rem;
+
+    overflow: hidden;
+}
+
+.linethrough-black:before,
+.linethrough-black:after {
+    position: relative;
+    vertical-align: middle;
+
+    display: inline-block;
+    width: 0.875rem;
+    height: 0.0625rem;
+
+    background: #000000;
+
+    content: "";
+}
+
+.linethrough-black:before {
+    right: 0.5em;
+
+    margin-left: -50%;
+}
+
+.linethrough-black:after {
+    left: 0.5em;
+
+    margin-right: -50%;
+}

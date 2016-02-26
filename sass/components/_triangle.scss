@@ -1,0 +1,23 @@
+.triangle-wrapper {
+  position: relative;
+  top: -145px;
+
+  @include col-xs-24;
+}
+
+.triangle {
+  position: absolute;
+  z-index: 2;
+
+  border-right: 50vw solid rgba(255, 255, 255, 1);
+  border-top: 75px solid transparent;
+  border-left: 50vw solid rgba(255, 255, 255, 1);
+}
+
+.triangle--transparent {
+  border-right: 50vw solid rgba(255, 255, 255, 0);
+  border-bottom: 0px solid transparent;
+  border-top: 25px solid rgba(255, 255, 255, 1);
+  border-left: 50vw solid rgba(255, 255, 255, 0);
+}
+//rgba(255, 0, 255, 1)

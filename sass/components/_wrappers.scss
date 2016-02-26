@@ -1,0 +1,11 @@
+.wrapper-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.wrapper-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}

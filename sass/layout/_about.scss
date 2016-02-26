@@ -1,0 +1,29 @@
+.page__about {
+  margin-top: 70px;
+}
+
+.page__about__header--wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.page__about__header {
+  width: 310px;
+
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.page__about__text {
+  margin-top: 43px;
+  margin-bottom: 200px;
+
+  width: 310px;
+
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
