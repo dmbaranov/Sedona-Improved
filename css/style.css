@@ -370,10 +370,11 @@
 .footer__madeby-wrapper {
   margin-top: 52px;
   margin-bottom: 35px;
-  -webkit-flex-basis: 100%;
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
-  max-width: 100%;
+  -webkit-flex-basis: 95.83333333%;
+  -ms-flex-preferred-size: 95.83333333%;
+  flex-basis: 95.83333333%;
+  max-width: 95.83333333%;
+  margin-left: 4.16666667%;
 }
 
 .footer__about__madeby {
@@ -382,19 +383,24 @@
 }
 
 .footer__about__madeby img {
-  margin: -5px 14px;
+  margin: -14px 14px;
+  width: 36px;
+  height: auto;
 }
 
 .social__twitter {
   background: url(../../img/icon-twitter.svg) no-repeat center center, #81b3d2;
+  background-size: 40px;
 }
 
 .social__facebook {
   background: url(../../img/icon-facebook.svg) no-repeat center center, #81b3d2;
+  background-size: 15px;
 }
 
 .social__youtube {
   background: url(../../img/icon-youtube.svg) no-repeat center center, #81b3d2;
+  background-size: 40px;
 }
 
 .wrapper-center {

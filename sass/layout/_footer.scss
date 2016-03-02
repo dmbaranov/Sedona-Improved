@@ -59,7 +59,8 @@
   margin-top: 52px;
   margin-bottom: 35px;
 
-  @include col-xs-24;
+  @include col-xs-23;
+  @include col-xs-offset-1;
 }
 
 .footer__about__madeby {
@@ -67,18 +68,24 @@
   font-size: 24px;
 
   & img {
-    margin: -5px 14px;
+    margin: -14px 14px;
+
+    width: 36px;
+    height: auto;
   }
 }
 
 .social__twitter {
   background: url(../../img/icon-twitter.svg) no-repeat center center, $blue;
+  background-size: 40px;
 }
 
 .social__facebook {
   background: url(../../img/icon-facebook.svg) no-repeat center center, $blue;
+  background-size: 15px;
 }
 
 .social__youtube {
   background: url(../../img/icon-youtube.svg) no-repeat center center, $blue;
+  background-size: 40px;
 }
