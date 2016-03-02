@@ -68,7 +68,7 @@
             </div>
           </div>
           <div class="feature-description">
-            <div class="feature-description--souvenir">
+            <div class="feature-description--food">
               <div class="feature-description__header">Еда</div>
               <div class="wrapper-left">
                 <div class="feature-description__text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</div>
@@ -91,29 +91,75 @@
           </div>
           <div class="feature-gray">
             <div class="feature-gray__header">Небольшая площадь</div>
-            <div class="feature-gray__number"><span class="linethrough-black">2</span></div>
+            <div class="feature-gray__number"><span class="linethrough-black">3</span></div>
             <div class="wrapper-center">
               <div class="feature-gray__text">Все достопримечательности находятся очень близко</div>
             </div>
           </div>
           <div class="feature-gray__separator"></div>
           <div class="feature-gray">
-            <div class="feature-gray__header">Небольшая площадь</div>
-            <div class="feature-gray__number"><span class="linethrough-black">2</span></div>
+            <div class="feature-gray__header">Красивая дорога</div>
+            <div class="feature-gray__number"><span class="linethrough-black">4</span></div>
             <div class="wrapper-center">
-              <div class="feature-gray__text">Все достопримечательности находятся очень близко</div>
+              <div class="feature-gray__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</div>
             </div>
           </div>
           <div class="feature-gray__separator"></div>
           <div class="feature-gray">
-            <div class="feature-gray__header">Небольшая площадь</div>
-            <div class="feature-gray__number"><span class="linethrough-black">2</span></div>
+            <div class="feature-gray__header">Мало туристов</div>
+            <div class="feature-gray__number"><span class="linethrough-black">5</span></div>
             <div class="wrapper-center">
-              <div class="feature-gray__text">Все достопримечательности находятся очень близко</div>
+              <div class="feature-gray__text">Большинство едет в Гранд Каньон и толпится там</div>
+            </div>
+          </div>
+        </section>
+        <section class="page__footer">
+          <div class="footer__interested">
+            <div class="footer__interested__header">Заинтересовались?</div>
+            <div class="wrapper-center">
+              <div class="footer__interested__text">Укажите предполагаемые даты поездки и мы покажем Вам лучшие предложения гостиниц в Седоне</div>
+            </div>
+          </div>
+          <form class="footer__form-search" action="index.html" method="post">
+            <div class="form-search__header">
+              <span class="form-search__header__text">Поиск гостиницы в седоне</span>
+            </div>
+            <div class="form-search__input-header">Дата заезда:</div>
+            <input class="form-search__input" type="text" name="arrival-date" value="">
+            <div class="form-search__input-header">Дата выезда:</div>
+            <input class="form-search__input" type="text" name="departure-date" value="">
+            <div class="form-search__people">
+              <div class="form-search__people-block">
+                <div class="form-search__people-block__header">Взрослые:</div>
+                <div class="form-search__people-block__button-counter">&minus;</div>
+                <input class="form-search__people-block__input--small" type="text" name="adults" value="">
+                <div class="form-search__people-block__button-counter">&plus;</div>
+              </div>
+              <div class="form-search__people-block people-block-second">
+                <div class="form-search__people-block__header">Дети:</div>
+                <div class="form-search__people-block__button-counter">&minus;</div>
+                <input class="form-search__people-block__input--small" type="text" name="children" value="">
+                <div class="form-search__people-block__button-counter">&plus;</div>
+              </div>
+            </div>
+            <input class="form-search__submit" type="submit" name="name" value="Найти">
+          </form>
+          <div class="footer__map" id="footer__map"></div>
+          <div class="footer__about wrapper-center">
+            <div class="footer__about__hashtag">#visitsedona</div>
+            <div class="footer__about__social">
+              <div class="footer__about__social__button social__twitter"></div>
+              <div class="footer__about__social__button social__facebook"></div>
+              <div class="footer__about__social__button social__youtube"></div>
+            </div>
+            <div class="wrapper-center footer__madeby-wrapper">
+              <div class="footer__about__madeby">Website by <img src="img/logo-glukhanko.svg"/> for <img src="img/logo-htmlacademy.svg" /></div>
             </div>
           </div>
         </section>
       </main>
     </div>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>

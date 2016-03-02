@@ -1,0 +1,142 @@
+.footer__form-search {
+  margin-top: 34px;
+}
+
+.form-search__header {
+  text-align: center;
+
+  background: #766357;
+}
+
+.form-search__header__text {
+  display: inline-block;
+  padding: 35px 0;
+
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.form-search__input-header {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 15px;
+
+  font-weight: bold;
+  text-transform: uppercase;
+
+  @include col-xs-20;
+  @include col-xs-offset-2;
+}
+
+.form-search__input-header::after {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+
+  width: 20px;
+  height: 22px;
+
+  background: url(../../img/icon-calendar.svg) no-repeat center center;
+
+  content: "";
+}
+
+.form-search__input {
+  height: 38px;
+  width: 91.66666667%;
+
+  font-weight: bold;
+  text-transform: uppercase;
+
+  border: 0;
+  background: $light-gray;
+
+  @include col-xs-offset-1;
+}
+
+.form-search__people {
+  display: flex;
+}
+
+.form-search__people-block {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include col-xs-12;
+}
+
+.form-search__people-block:nth-child(2) {
+  & .form-search__people-block__header {
+    @include col-xs-offset-4;
+  }
+
+  & .form-search__people-block__button-counter {
+    @include col-xs-7;
+  }
+
+  & .form-search__people-block__input--small {
+    width: 33.33333333%;
+  }
+
+  @include col-xs-10;
+  @include col-xs-offset-1;
+}
+
+.form-search__people-block__header {
+  margin-top: 30px;
+  margin-bottom: 15px;
+
+  font-weight: bold;
+  text-transform: uppercase;
+
+  @include col-xs-21;
+  @include col-xs-offset-3;
+}
+
+.form-search__people-block__button-counter {
+  padding: 14px 0;
+
+  text-align: center;
+  font-size: 20px;
+  color: $dark-gray;
+
+  background: $light-gray;
+
+  @include col-xs-5;
+  @include col-xs-offset-2;
+}
+
+.form-search__people-block__button-counter:nth-child(4) {
+  @include col-xs-offset-0;
+}
+
+.form-search__people-block__input--small {
+  width: 33.33333333%;
+  padding: 14px 0;
+
+  background: $light-gray;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+
+  border: 0;
+}
+
+.form-search__submit {
+  margin: 50px 0;
+
+  width: 91.66666667%;
+  padding: 20px 0;
+
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 21px;
+
+  border: 0;
+  background: $blue;
+
+  @include col-xs-offset-1;
+}
