@@ -3,6 +3,7 @@
   top: -145px;
 
   @include col-xs-24;
+  @include hidden-sm;
 }
 
 .triangle {

@@ -6,7 +6,7 @@ function initialize() {
     center: coords,
     zoom: 14,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
-    disableDefaultUI: false
+    disableDefaultUI: true
   };
 
   var map = new google.maps.Map(mapCanvas, mapOptions);

@@ -2,6 +2,13 @@
   height: 56px;
   display: flex;
   align-items: center;
+
+  & a {
+    color: #000000;
+    font-family: $font-bold;
+    font-weight: bold;
+    text-decoration: none;
+  }
 }
 
 .navigation__logo {
@@ -16,10 +23,39 @@
 }
 
 .navigation__burger {
-  height: 23px;
+  @include mq-xs {
+    height: 23px;
 
-  background: url(../../img/icon-menu.svg) no-repeat center center;
+    background: url(../../img/icon-menu.svg) no-repeat center center;
 
-  @include col-xs-2;
-  @include col-xs-offset-20;
+    @include col-xs-2;
+    @include col-xs-offset-20;
+  }
+}
+
+.navigation-left {
+  display: flex;
+  justify-content: space-between;
+
+  @include col-xs-8;
+  @include col-xs-offset-1;
+  @include hidden-xs;
+
+  & a {
+    margin-right: 10%;
+  }
+}
+
+.navigation-right {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  @include col-xs-9;
+  @include col-xs-offset-5;
+  @include hidden-xs;
+
+  & a {
+    margin-left: 38px;
+  }
 }

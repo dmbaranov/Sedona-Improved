@@ -11,10 +11,15 @@
 .page__about__header {
   width: 310px;
 
-  font-size: 18px;
+  font-size: $font-xs-medium;
   text-align: center;
   font-weight: bold;
-  text-transform: uppercase;
+  font-family: $font-bold;
+
+  @include mq-sm {
+    width: 600px;
+    font-size: $font-sm-medium;
+  };
 }
 
 .page__about__text {
@@ -23,7 +28,11 @@
 
   width: 310px;
 
-  font-size: 14px;
+  font-size: $font-xs-small;
   text-align: center;
-  text-transform: uppercase;
+  font-family: $font-normal;
+
+  @include mq-sm {
+    width: 600px;
+  }
 }

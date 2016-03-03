@@ -8,3 +8,21 @@ $blue: #81b3d2;
 $gray: #eeeeee;
 $light-gray: #f2f2f2;
 $dark-gray: #a9a9a9;
+
+//Fonts
+@font-face {
+  font-family: "Myriad Pro";
+  src: url(../../fonts/MyriadPro/MyriadPro-Regular.otf);
+}
+
+@font-face {
+  font-family: "Myriad Pro Bold";
+  src: url(../../fonts/MyriadPro/MyriadPro-Bold.otf);
+}
+
+$font-normal: "MyriadPro-Regular", sans-serif;
+$font-bold: "MyriadPro-Bold", sans-serif;
+$font-xs-small: 14px;
+$font-xs-medium: 18px;
+$font-xs-big: 21px;
+$font-sm-medium: 21px;
