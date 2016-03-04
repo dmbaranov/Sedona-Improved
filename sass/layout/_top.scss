@@ -53,7 +53,7 @@
 
 .top__mini-triangle-wrapper {
   position: relative;
-  top: 33px;
+  top: 65px;
 
   @include col-xs-24;
   @include hidden-xs;
@@ -65,6 +65,6 @@
   z-index: 2;
 
   border-right: 30vw solid rgba(255, 255, 255, 1);
-  border-top: 95px solid transparent;
+  border-top: 65px solid transparent;
   border-left: 30vw solid rgba(255, 255, 255, 1);
 }

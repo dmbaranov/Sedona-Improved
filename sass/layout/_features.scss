@@ -5,19 +5,23 @@
   }
 }
 
-.feature-blue {
+.feature__block {
   padding: 1px;
 
   background: $blue;
 
-  @include col-sm-10;
+  @include col-sm-8;
+
+  @include mq-sm {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 272px;
+  }
 }
 
-.feature-blue--first {
-  margin-top: -145px;
-}
-
-.feature-blue__header {
+.feature__block__header {
   margin-top: 60px;
 
   text-align: center;
@@ -25,18 +29,26 @@
   font-family: $font-bold;
   font-weight: bold;
   color: white;
+
+  @include mq-sm {
+    width: 172px;
+
+    text-align: center;
+  }
 }
 
-.feature-blue__number {
+.feature__block__number {
   margin-top: 20px;
 
   text-align: center;
   font-size: $font-xs-big;
   font-family: $font-normal;
   color: white;
+
+  @include col-sm-24;
 }
 
-.feature-blue__text {
+.feature__block__text {
   margin-top: 25px;
   margin-bottom: 45px;
 
@@ -46,18 +58,68 @@
   font-size: $font-xs-big;
   font-family: $font-normal;
   color: white;
+
+  @include mq-sm {
+    width: 190px;
+
+    font-size: $font-sm-xsmall;
+  }
+}
+
+.feature__block--blue {
+  background: $blue;
+}
+
+.feature__block--gray {
+  background: $gray;
+  & div {
+    color: black;
+  }
+}
+
+.feature-blue--first {
+  @include mq-xs {
+    margin-top: -145px;
+  }
+
+  @include mq-sm {
+    align-self: flex-end;
+  }
+}
+
+.feature__block--reverse {
+  @include mq-sm {
+    display: flex;
+    flex-direction: row-reverse;
+
+    & > .feature__block {
+      @include col-sm-8;
+    }
+
+    & > .feature-photo {
+      @include col-sm-16;
+    }
+  }
+}
+
+.feature-photo {
+  @include col-sm-16;
+
+  @include mq-sm {
+    height: 272px;
+
+    overflow: hidden;
+  }
 }
 
 .feature-photo__photo {
-  width: 100%;
   height: auto;
 
-  @include mq-sm {
-    border: 1px solid red;
-    float: right;
-    width: 50%;
-  }
+  @include col-xs-24;
 
+  @include mq-sm {
+    min-height: 272px;
+  }
 }
 
 .feature-description {
@@ -69,6 +131,11 @@
 
   @include col-sm-3;
   @include col-sm-offset-4;
+
+  @include mq-sm {
+    text-align: center;
+    width: 50px;
+  }
 }
 
 .feature-description--hotel::after {
@@ -129,48 +196,10 @@
   font-family: $font-normal;
 }
 
-//CHECK THAT GRAY BLOCK FOR DRY!
-
-.feature-gray {
-  background: $gray;
-  @include col-sm-8;
-}
-
-.feature-gray__header {
-  margin-top: -3px;
-
-  padding-top: 33px;
-
-
-  text-align: center;
-  font-size: $font-xs-big;
-  font-weight: bold;
-  font-family: $font-bold;
-  color: black;
-}
-
-.feature-gray__number {
-  margin-top: 20px;
-
-  text-align: center;
-  font-size: $font-xs-big;
-  font-family: $font-normal;
-  color: black;
-}
-
-.feature-gray__text {
-  margin-top: 25px;
-  margin-bottom: 45px;
-
-  width: 300px;
-
-  text-align: center;
-  font-family: $font-normal;
-  color: black;
-}
-
 .feature-gray__separator {
   position: relative;
+
+  @include hidden-sm;
 }
 
 .feature-gray__separator::after {

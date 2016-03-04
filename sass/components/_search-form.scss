@@ -1,11 +1,53 @@
 .footer__form-search {
+  position: relative;
   margin-top: 34px;
+
+  @include col-sm-18;
+  @include col-sm-offset-3;
 }
 
 .form-search__header {
   text-align: center;
 
   background: #766357;
+}
+
+.form-search__main {
+  @include mq-sm {
+    position: absolute;
+
+    background: #ffffff;
+
+    z-index: 2;
+
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.form-search__date-block {
+  position: relative;
+
+  @include mq-sm {
+    display: flex;
+    height: 100px;
+    width: 525px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.form-search__date-block::after {
+  position: absolute;
+  top: 40px;
+  right: 8%;
+
+  width: 20px;
+  height: 22px;
+
+  background: url(../../img/icon-calendar.svg) no-repeat center center;
+
+  content: "";
 }
 
 .form-search__header__text {
@@ -28,24 +70,17 @@
 
   @include col-xs-20;
   @include col-xs-offset-2;
-}
+  @include col-sm-6;
+  @include col-sm-offset-0;
 
-.form-search__input-header::after {
-  position: absolute;
-  top: 40px;
-  right: 10px;
-
-  width: 20px;
-  height: 22px;
-
-  background: url(../../img/icon-calendar.svg) no-repeat center center;
-
-  content: "";
+  @include mq-sm {
+    margin-top: 15px;
+  }
 }
 
 .form-search__input {
   height: 38px;
-  width: 91.66666667%;
+  width: 87.5%;
   padding-left: 4.16666667%;
 
   font-weight: bold;
@@ -55,6 +90,11 @@
   background: $light-gray;
 
   @include col-xs-offset-1;
+  @include col-sm-offset-0;
+
+  @include mq-sm {
+    width: 330px;
+  }
 }
 
 .form-search__people {
@@ -66,15 +106,37 @@
   flex-wrap: wrap;
 
   @include col-xs-12;
+  @include col-sm;
+
+  @include mq-sm {
+    width: 262px;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .form-search__people-block:nth-child(2) {
+  @include col-xs-offset-1;
+}
+
+.form-search__people-block:nth-child(2) {
+  @include col-sm-offset-0;
+
   & .form-search__people-block__header {
+    @include col-xs-14;
     @include col-xs-offset-4;
+    @include col-sm-4;
+    @include col-sm-offset-2;
+
+    @include mq-sm {
+      position: relative;
+      left: -30px;
+    }
   }
 
   & .form-search__people-block__button-counter {
     @include col-xs-7;
+    @include col-sm-3;
   }
 
   & .form-search__people-block__input--small {
@@ -83,6 +145,7 @@
 
   @include col-xs-10;
   @include col-xs-offset-1;
+  @include col-sm-offset-0;
 }
 
 .form-search__people-block__header {
@@ -94,6 +157,13 @@
 
   @include col-xs-21;
   @include col-xs-offset-3;
+  @include col-sm-10;
+  @include col-sm-offset-0;
+
+  @include mq-sm {
+    position: relative;
+    top: -5px;
+  }
 }
 
 .form-search__people-block__button-counter {
@@ -107,6 +177,13 @@
 
   @include col-xs-5;
   @include col-xs-offset-2;
+  @include col-sm-4;
+  @include col-sm-offset-0;
+
+  @include mq-sm {
+    width: 60px;
+    height: 43px;
+  }
 }
 
 .form-search__people-block__button-counter:nth-child(4) {
@@ -123,6 +200,10 @@
   text-align: center;
 
   border: 0;
+
+  @include mq-sm {
+    width: 10%;
+  }
 }
 
 .form-search__submit {
@@ -140,4 +221,9 @@
   background: $blue;
 
   @include col-xs-offset-1;
+  @include col-sm-offset-0;
+
+  @include mq-sm {
+    width: 65%;
+  }
 }

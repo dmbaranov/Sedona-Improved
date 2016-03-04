@@ -8,6 +8,10 @@
   font-weight: bold;
   text-align: center;
   font-family: $font-bold;
+
+  @include mq-sm {
+    font-size: $font-sm-big;
+  }
 }
 
 .footer__interested__text {
@@ -17,12 +21,22 @@
 
   text-align: center;
   font-family: $font-normal;
+
+  @include mq-sm {
+    width: 450px;
+
+    font-size: $font-sm-xsmall;
+  }
 }
 
 .footer__map {
   height: 600px;
 
   @include col-xs-24;
+
+  @include mq-sm {
+    height: 800px;
+  }
 }
 
 .footer__about {
@@ -31,6 +45,20 @@
   flex-wrap: wrap;
 
   background: rgba(255, 255, 255, 0.8);
+
+  @include mq-xs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @include mq-sm {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+  }
 }
 
 .footer__about__hashtag {
@@ -42,10 +70,28 @@
   font-family: $font-bold;
 
   @include col-xs-24;
+  @include col-sm-8;
+
+  @include mq-sm {
+    position: relative;
+    top: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
 }
 
 .footer__about__social {
   display: flex;
+
+  @include col-sm-8;
+
+  @include mq-sm {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .footer__about__social__button {
@@ -53,6 +99,10 @@
   margin-left: 6px;
 
   padding: 45px;
+
+  @include mq-sm {
+    padding: 30px;
+  }
 }
 
 .footer__madeby-wrapper {
@@ -61,6 +111,23 @@
 
   @include col-xs-23;
   @include col-xs-offset-1;
+  @include col-sm-8;
+  @include col-sm-offset-0;
+
+  @include mq-xs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @include mq-sm {
+    position: relative;
+    top: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .footer__about__madeby {
@@ -72,6 +139,14 @@
 
     width: 36px;
     height: auto;
+
+    @include mq-sm {
+      margin: -14px 5px;
+    }
+  }
+
+  @include mq-sm {
+    font-size: $font-sm-xsmall;
   }
 }
 
