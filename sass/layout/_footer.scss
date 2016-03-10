@@ -12,6 +12,14 @@
   @include mq-sm {
     font-size: $font-sm-big;
   }
+
+  @include mq-md {
+    font-size: $font-sm-big;
+  }
+
+  @include mq-lg {
+    font-size: $font-sm-big;
+  }
 }
 
 .footer__interested__text {
@@ -27,6 +35,18 @@
 
     font-size: $font-sm-xsmall;
   }
+
+  @include mq-md {
+    width: 450px;
+
+    font-size: $font-sm-xsmall;
+  }
+
+  @include mq-lg {
+    width: 450px;
+
+    font-size: $font-sm-xsmall;
+  }
 }
 
 .footer__map {
@@ -35,6 +55,14 @@
   @include col-xs-24;
 
   @include mq-sm {
+    height: 800px;
+  }
+
+  @include mq-md {
+    height: 800px;
+  }
+
+  @include mq-lg {
     height: 800px;
   }
 }
@@ -59,6 +87,20 @@
     width: 100%;
     padding-bottom: 30px;
   }
+
+  @include mq-md {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  @include mq-lg {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+  }
 }
 
 .footer__about__hashtag {
@@ -71,6 +113,8 @@
 
   @include col-xs-24;
   @include col-sm-8;
+  @include col-md-8;
+  @include col-lg-8;
 
   @include mq-sm {
     position: relative;
@@ -81,14 +125,43 @@
     justify-content: center;
   }
 
+  @include mq-md {
+    position: relative;
+    top: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @include mq-lg {
+    position: relative;
+    top: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .footer__about__social {
   display: flex;
 
   @include col-sm-8;
+  @include col-md-8;
+  @include col-lg-8;
 
   @include mq-sm {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @include mq-md {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @include mq-lg {
     flex-direction: row;
     justify-content: center;
   }
@@ -103,6 +176,14 @@
   @include mq-sm {
     padding: 30px;
   }
+
+  @include mq-md {
+    padding: 30px;
+  }
+
+  @include mq-lg {
+    padding: 30px;
+  }
 }
 
 .footer__madeby-wrapper {
@@ -113,6 +194,10 @@
   @include col-xs-offset-1;
   @include col-sm-8;
   @include col-sm-offset-0;
+  @include col-md-8;
+  @include col-md-offset-0;
+  @include col-lg-8;
+  @include col-lg-offset-0;
 
   @include mq-xs {
     display: flex;
@@ -121,6 +206,24 @@
   }
 
   @include mq-sm {
+    position: relative;
+    top: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @include mq-md {
+    position: relative;
+    top: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @include mq-lg {
     position: relative;
     top: 10px;
 
@@ -143,9 +246,25 @@
     @include mq-sm {
       margin: -14px 5px;
     }
+
+    @include mq-md {
+      margin: -14px 5px;
+    }
+
+    @include mq-lg {
+      margin: -14px 5px;
+    }
   }
 
   @include mq-sm {
+    font-size: $font-sm-xsmall;
+  }
+
+  @include mq-md {
+    font-size: $font-sm-xsmall;
+  }
+
+  @include mq-lg {
     font-size: $font-sm-xsmall;
   }
 }

@@ -18,8 +18,21 @@
 
   @include mq-sm {
     width: 600px;
+
     font-size: $font-sm-medium;
   };
+
+  @include mq-md {
+    width: 600px;
+
+    font-size: $font-sm-medium;
+  }
+
+  @include mq-lg {
+    width: 600px;
+
+    font-size: $font-sm-medium;
+  }
 }
 
 .page__about__text {
@@ -33,8 +46,20 @@
   font-family: $font-normal;
 
   @include mq-sm {
-    width: 600px;
-
     margin-bottom: 56px;
+
+    width: 600px;
+  }
+
+  @include mq-md {
+    margin-bottom: 56px;
+
+    width: 600px;
+  }
+
+  @include mq-lg {
+    margin-bottom: 56px;
+
+    width: 600px;
   }
 }

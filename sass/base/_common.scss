@@ -1,3 +1,19 @@
 body {
   text-transform: uppercase;
 }
+
+.container-fluid {
+  background: #ffffff;
+}
+
+.my-container {
+  @include mq-lg {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: $device-lg - 30px;
+
+    background: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+}

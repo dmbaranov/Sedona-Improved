@@ -4,6 +4,10 @@
 
   @include col-sm-18;
   @include col-sm-offset-3;
+  @include col-md-14;
+  @include col-md-offset-5;
+  @include col-lg-14;
+  @include col-lg-offset-5;
 }
 
 .form-search__header {
@@ -14,6 +18,28 @@
 
 .form-search__main {
   @include mq-sm {
+    position: absolute;
+
+    background: #ffffff;
+
+    z-index: 2;
+
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+  @include mq-md {
+    position: absolute;
+
+    background: #ffffff;
+
+    z-index: 2;
+
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+  @include mq-lg {
     position: absolute;
 
     background: #ffffff;
@@ -35,6 +61,22 @@
     align-items: center;
     justify-content: center;
   }
+
+  @include mq-md {
+    display: flex;
+    height: 100px;
+    width: 625px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include mq-lg {
+    display: flex;
+    height: 100px;
+    width: 625px;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .form-search__date-block::after {
@@ -48,6 +90,10 @@
   background: url(../../img/icon-calendar.svg) no-repeat center center;
 
   content: "";
+
+  @include mq-lg {
+    right: 12%;
+  }
 }
 
 .form-search__header__text {
@@ -72,8 +118,20 @@
   @include col-xs-offset-2;
   @include col-sm-6;
   @include col-sm-offset-0;
+  @include col-md-5;
+  @include col-md-offset-0;
+  @include col-lg-5;
+  @include col-lg-offset-0;
 
   @include mq-sm {
+    margin-top: 15px;
+  }
+
+  @include mq-md {
+    margin-top: 15px;
+  }
+
+  @include mq-lg {
     margin-top: 15px;
   }
 }
@@ -91,9 +149,19 @@
 
   @include col-xs-offset-1;
   @include col-sm-offset-0;
+  @include col-md-offset-0;
+  @include col-lg-offset-0;
 
   @include mq-sm {
     width: 330px;
+  }
+
+  @include mq-md {
+    width: 355px;
+  }
+
+  @include mq-lg {
+    width: 355px;
   }
 }
 
@@ -107,9 +175,23 @@
 
   @include col-xs-12;
   @include col-sm;
+  @include col-md;
+  @include col-lg;
 
   @include mq-sm {
     width: 262px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include mq-md {
+    width: 275px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include mq-lg {
+    width: 275px;
     align-items: center;
     justify-content: center;
   }
@@ -117,18 +199,31 @@
 
 .form-search__people-block:nth-child(2) {
   @include col-xs-offset-1;
-}
-
-.form-search__people-block:nth-child(2) {
   @include col-sm-offset-0;
+  @include col-md-offset-0;
+  @include col-lg-offset-0;
 
   & .form-search__people-block__header {
     @include col-xs-14;
     @include col-xs-offset-4;
     @include col-sm-4;
     @include col-sm-offset-2;
+    @include col-md-4;
+    @include col-md-offset-2;
+    @include col-lg-4;
+    @include col-lg-offset-2;
 
     @include mq-sm {
+      position: relative;
+      left: -30px;
+    }
+
+    @include mq-md {
+      position: relative;
+      left: -30px;
+    }
+
+    @include mq-lg {
       position: relative;
       left: -30px;
     }
@@ -137,6 +232,8 @@
   & .form-search__people-block__button-counter {
     @include col-xs-7;
     @include col-sm-3;
+    @include col-md-3;
+    @include col-lg-3;
   }
 
   & .form-search__people-block__input--small {
@@ -146,6 +243,8 @@
   @include col-xs-10;
   @include col-xs-offset-1;
   @include col-sm-offset-0;
+  @include col-md-offset-0;
+  @include col-lg-offset-0;
 }
 
 .form-search__people-block__header {
@@ -159,8 +258,22 @@
   @include col-xs-offset-3;
   @include col-sm-10;
   @include col-sm-offset-0;
+  @include col-md-9;
+  @include col-md-offset-0;
+  @include col-lg-9;
+  @include col-lg-offset-0;
 
   @include mq-sm {
+    position: relative;
+    top: -5px;
+  }
+
+  @include mq-md {
+    position: relative;
+    top: -5px;
+  }
+
+  @include mq-lg {
     position: relative;
     top: -5px;
   }
@@ -179,8 +292,22 @@
   @include col-xs-offset-2;
   @include col-sm-4;
   @include col-sm-offset-0;
+  @include col-md-4;
+  @include col-md-offset-0;
+  @include col-lg-4;
+  @include col-lg-offset-0;
 
   @include mq-sm {
+    width: 60px;
+    height: 43px;
+  }
+
+  @include mq-md {
+    width: 60px;
+    height: 43px;
+  }
+
+  @include mq-lg {
     width: 60px;
     height: 43px;
   }
@@ -201,8 +328,16 @@
 
   border: 0;
 
-  @include mq-sm {
+  @include mq-sm { //CHECK THIS
     width: 10%;
+  }
+
+  @include mq-md {
+    width: 12.5%;
+  }
+
+  @include mq-lg {
+    width: 12.5%;
   }
 }
 
@@ -222,8 +357,24 @@
 
   @include col-xs-offset-1;
   @include col-sm-offset-0;
+  @include col-md-offset-0;
+  @include col-lg-offset-0;
 
   @include mq-sm {
-    width: 65%;
+    margin-left: 7px;
+
+    width: 485px;
+  }
+
+  @include mq-md {
+    margin-left: 7px;
+
+    width: 505px;
+  }
+
+  @include mq-lg {
+    margin-left: 7px;
+
+    width: 505px;
   }
 }

@@ -3,6 +3,16 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  @include mq-md {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include mq-lg {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .feature__block {
@@ -11,8 +21,26 @@
   background: $blue;
 
   @include col-sm-8;
+  @include col-md-8;
+  @include col-lg-8;
 
   @include mq-sm {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 272px;
+  }
+
+  @include mq-md {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 272px;
+  }
+
+  @include mq-lg {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -35,6 +63,18 @@
 
     text-align: center;
   }
+
+  @include mq-md {
+    width: 172px;
+
+    text-align: center;
+  }
+
+  @include mq-lg {
+    width: 172px;
+
+    text-align: center;
+  }
 }
 
 .feature__block__number {
@@ -46,6 +86,8 @@
   color: white;
 
   @include col-sm-24;
+  @include col-md-24;
+  @include col-lg-24;
 }
 
 .feature__block__text {
@@ -60,6 +102,18 @@
   color: white;
 
   @include mq-sm {
+    width: 190px;
+
+    font-size: $font-sm-xsmall;
+  }
+
+  @include mq-md {
+    width: 190px;
+
+    font-size: $font-sm-xsmall;
+  }
+
+  @include mq-lg {
     width: 190px;
 
     font-size: $font-sm-xsmall;
@@ -85,6 +139,14 @@
   @include mq-sm {
     align-self: flex-end;
   }
+
+  @include mq-md {
+    align-self: flex-end;
+  }
+
+  @include mq-lg {
+    align-self: flex-end;
+  }
 }
 
 .feature__block--reverse {
@@ -100,12 +162,52 @@
       @include col-sm-16;
     }
   }
+
+  @include mq-md {
+    display: flex;
+    flex-direction: row-reverse;
+
+    & > .feature__block {
+      @include col-md-8;
+    }
+
+    & > .feature-photo {
+      @include col-md-16;
+    }
+  }
+
+  @include mq-lg {
+    display: flex;
+    flex-direction: row-reverse;
+
+    & > .feature__block {
+      @include col-lg-8;
+    }
+
+    & > .feature-photo {
+      @include col-lg-16;
+    }
+  }
 }
 
 .feature-photo {
   @include col-sm-16;
+  @include col-md-16;
+  @include col-lg-16;
 
   @include mq-sm {
+    height: 272px;
+
+    overflow: hidden;
+  }
+
+  @include mq-md {
+    height: 272px;
+
+    overflow: hidden;
+  }
+
+  @include mq-lg {
     height: 272px;
 
     overflow: hidden;
@@ -120,6 +222,38 @@
   @include mq-sm {
     min-height: 272px;
   }
+
+  @include mq-md {
+    min-height: 272px;
+  }
+
+  @include mq-lg {
+    min-height: 272px;
+  }
+}
+
+.feature-description__sm-wrapper {
+  @include col-sm-24;
+  @include col-md-24;
+  @include col-lg-24;
+
+  @include mq-sm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  @include mq-md {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  @include mq-lg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .feature-description {
@@ -129,12 +263,32 @@
   @include col-xs-20;
   @include col-xs-offset-4;
 
-  @include col-sm-3;
-  @include col-sm-offset-4;
+  @include col-sm-offset-0;
+  @include col-md-offset-0;
+  @include col-lg-offset-0;
 
   @include mq-sm {
+    margin-top: 166px;
+
+    max-width: 180px;
+
     text-align: center;
-    width: 50px;
+  }
+
+  @include mq-md {
+    margin-top: 166px;
+
+    max-width: 180px;
+
+    text-align: center;
+  }
+
+  @include mq-lg {
+    margin-top: 166px;
+
+    max-width: 180px;
+
+    text-align: center;
   }
 }
 
@@ -150,6 +304,30 @@
   background-size: contain;
 
   content: "";
+
+  @include mq-sm {
+    top: -110px;
+    left: 50px;
+
+    width: 80px;
+    height: 70px;
+  }
+
+  @include mq-md {
+    top: -110px;
+    left: 50px;
+
+    width: 80px;
+    height: 70px;
+  }
+
+  @include mq-lg {
+    top: -110px;
+    left: 50px;
+
+    width: 80px;
+    height: 70px;
+  }
 }
 
 .feature-description--souvenir::after {
@@ -164,6 +342,30 @@
   background-size: contain;
 
   content: "";
+
+  @include mq-sm {
+    top: -110px;
+    left: 50px;
+
+    width: 80px;
+    height: 70px;
+  }
+
+  @include mq-md {
+    top: -110px;
+    left: 50px;
+
+    width: 80px;
+    height: 70px;
+  }
+
+  @include mq-lg {
+    top: -110px;
+    left: 50px;
+
+    width: 80px;
+    height: 70px;
+  }
 }
 
 .feature-description--food::after {
@@ -178,6 +380,30 @@
   background-size: contain;
 
   content: "";
+
+  @include mq-sm {
+    top: -110px;
+    left: 50px;
+
+    width: 80px;
+    height: 70px;
+  }
+
+  @include mq-md {
+    top: -110px;
+    left: 50px;
+
+    width: 80px;
+    height: 70px;
+  }
+
+  @include mq-lg {
+    top: -110px;
+    left: 50px;
+
+    width: 80px;
+    height: 70px;
+  }
 }
 
 .feature-description__header {
@@ -200,6 +426,8 @@
   position: relative;
 
   @include hidden-sm;
+  @include hidden-md;
+  @include hidden-lg;
 }
 
 .feature-gray__separator::after {

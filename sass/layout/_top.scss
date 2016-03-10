@@ -67,4 +67,10 @@
   border-right: 30vw solid rgba(255, 255, 255, 1);
   border-top: 65px solid transparent;
   border-left: 30vw solid rgba(255, 255, 255, 1);
+
+  @include mq-lg {
+    border-right: ($device-lg / 3) solid rgba(255, 255, 255, 1);
+    border-top: 65px solid transparent;
+    border-left: ($device-lg / 4) solid rgba(255, 255, 255, 1);
+  }
 }

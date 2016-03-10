@@ -33,6 +33,8 @@
 @mixin container {
   margin-right: auto;
   margin-left: auto;
+
+  background: red;
 }
 
 @include mq-sm {

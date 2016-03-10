@@ -12,6 +12,12 @@
   border-right: 50vw solid rgba(255, 255, 255, 1);
   border-top: 75px solid transparent;
   border-left: 50vw solid rgba(255, 255, 255, 1);
+
+  @include mq-lg {
+    border-right: ($device-lg / 2) solid rgba(255, 255, 255, 1);
+    border-top: 75px solid transparent;
+    border-left: ($device-lg / 2 - 30px) solid rgba(255, 255, 255, 1);
+  }
 }
 
 .triangle--transparent {
@@ -19,8 +25,18 @@
   border-bottom: 0px solid transparent;
   border-top: 25px solid rgba(255, 255, 255, 1);
   border-left: 50vw solid rgba(255, 255, 255, 0);
+
+  @include mq-lg {
+    border-right: ($device-lg / 2) solid rgba(255, 255, 255, 1);
+    border-top: 75px solid transparent;
+    border-left: ($device-lg / 2) solid rgba(255, 255, 255, 1);
+
+    background: red;
+  }
 }
 
 .triangle--hidden-sm {
   @include hidden-sm;
+  @include hidden-md;
+  @include hidden-lg;
 }
