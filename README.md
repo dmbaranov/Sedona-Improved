@@ -1,2 +1,2 @@
 # Sedona-Improved
-New Sedona site!
+New Sedona site! I've used SASS over here, but without js.
